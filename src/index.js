@@ -19,7 +19,7 @@ $(document).ready(function() {
     promise.then(function(response) {
       const body = JSON.parse(response);
       const parseIntConversion = parseFloat(`${body.conversion_rate}`);
-      const finalConvert = (`${parseIntConversion}` * `${monetaryValue}`);
+      const finalConvert = (`Math${parseIntConversion}` * `${monetaryValue}`);
       $('.showConversion').text(`${monetaryValue} ${base} is ${finalConvert} ${currency}'s`);
     }, function(error) {
       $('.showErrors').text(`There was an error processing your request: ${error}`);
