@@ -6,7 +6,9 @@ import './css/styles.css';
 $(document).ready(function() {
   $('#exchangeRate').click(function() {
     const currency = $('#userConversion').val();
-    const monetaryValue = $('#userAmount').val();
+    const monetaryValue = parseInt($('#userAmount').val());
+
+
     const base = $('#userBase').val();
     $('#userBase').val('');
     $('#userConversion').val('');
@@ -22,16 +24,19 @@ $(document).ready(function() {
         } else {
           reject(request.response);
         }
-      }
+      };
       request.open("GET", url, true);
       request.send();
     });
 
     promise.then(function(response) {
       const body = JSON.parse(response);
-      const finalConvert = (`${body.conversion_rate} * ${currency}`);
+      const parseIntConversion = parseFloat(`${body.conversion_rate}`);
+      console.log(parseIntConversion);
+      const finalConvert = (`${parseIntConversion}` * `${monetaryValue}`);
+      console.log(typeof finalConvert);
       $('.showConversion').text(`${finalConvert}`);
-    })
+    });
   });
 });
 
