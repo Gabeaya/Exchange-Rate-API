@@ -6,9 +6,11 @@ import './css/styles.css';
 $(document).ready(function() {
   $('#exchangeRate').click(function() {
     const currency = $('#userConversion').val();
+    const monetaryValue = $('#userAmount').val();
     const base = $('#userBase').val();
     $('#userBase').val('');
-    $('#userCurrency').val('');
+    $('#userConversion').val('');
+    $('#userAmount').val('');
     
 
     let promise = new Promise(function(resolve, reject) {
@@ -27,7 +29,8 @@ $(document).ready(function() {
 
     promise.then(function(response) {
       const body = JSON.parse(response);
-      $('.showConversion')
+      const finalConvert = (`${body.conversion_rate} * ${currency}`);
+      $('.showConversion').text(`${finalConvert}`);
     })
   });
 });
