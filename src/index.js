@@ -13,14 +13,14 @@ $(document).ready(function() {
   $('#exchangeRate').click(function() {
     const base = $('#userBase').val();
     const currency = $('#userConversion').val();
-    const monetaryValue = parseInt($('#userAmount').val());
+    const monetaryValue = parseFloat($('#userAmount').val());
     clearFields();
     let promise = CurrencyConversion.getConversion(base,currency);
     promise.then(function(response) {
       const body = JSON.parse(response);
       const parseIntConversion = parseFloat(`${body.conversion_rate}`);
       const finalConvert = (`${parseIntConversion}` * `${monetaryValue}`);
-      $('.showConversion').text(`${finalConvert}`);
+      $('.showConversion').text(`${monetaryValue} ${base} is ${finalConvert} ${currency}'s`);
     }, function(error) {
       $('.showErrors').text(`There was an error processing your request: ${error}`);
     });
