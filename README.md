@@ -1,8 +1,8 @@
-# (Currency Exchanger)
+# Currency Exchanger
 
-#### (Currency Exchange- O8/13/21 - Code Review OO6
+#### Currency Exchange- O8/13/21 - Code Review OO6
 
-#### By (Gabriel Ayala)
+#### By Gabriel Ayala
 
 ## Technologies Used :floppy_disk:
 
@@ -10,10 +10,10 @@
 * _CSS_
 * _VS code_
 * _Bootstrap_
-* _JavaScript
+* _JavaScript_
 * _JQuery 3.6.0_
 * _npm_
-* _Webpack
+* _Webpack_
 * _ESLint_
 * _Babel_
 * _Postman_
@@ -23,8 +23,8 @@ _This application converts currencies all around the globe. The USer can select 
 
 ## Setup/Installation Requirements :triangular_ruler:
 
-* _Clone github repo in terminal: (repo here)_
-* _Navigate the directory: (cd Exchange-Rate-API)
+* _Clone github repo in terminal: (https://github.com/Gabeaya/Exchange-Rate-API)_
+* _Navigate the directory: (cd Exchange-Rate-API)_
 * _Open in Vs code: code ._
 * _Run: npm install. This  gets packages and node modules showing_
 * _Run: npm build_
