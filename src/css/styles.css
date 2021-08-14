@@ -1,7 +1,11 @@
 h1, h3 {
   text-align: center;
   background-size: cover;
-  color: rgb(13, 112, 8);
+}
+h1, h3, h2{
+  color: rgb(21, 113, 3);
+  -webkit-text-stroke: .5px #f2f4f3;
+  text-shadow: 0px 2px 4px rgb(241, 241, 241);
 }
 body {
   background-image: url(../../assests/images/flags.jpeg);
@@ -9,9 +13,10 @@ body {
 }
 .jumbotron {
   background-color: rgba(0, 0, 0, 0.747);
-  color: rgb(21, 113, 3);
+  color: rgb(255, 255, 255);
   text-shadow: -1px 1px rgb(1, 55, 45);
 }
+
 
 #exchangeRate {
   background-image: linear-gradient(to right, #262626 0%, #00ff66 51%, #282a2b 100%);
