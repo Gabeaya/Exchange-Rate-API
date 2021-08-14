@@ -22,10 +22,10 @@ $(document).ready(function() {
       const body = JSON.parse(response);
       const parseIntConversion = parseFloat(`${body.conversion_rate}`);
       const finalConvert = (`${parseIntConversion}` * `${monetaryValue}`);
-      $('.showConversion').prepend(`${monetaryValue} ${base} is ${finalConvert} ${currency}'s `);
+      $('.showConversion').text(`${monetaryValue} ${base} is ${finalConvert} ${currency}'s `);
       $('.showConversion').val('');
     }, function(error) {
-      $('.showErrors').prepend(`There was an error processing your request: ${error}`);
+      $('.showErrors').text(`There was an error processing your request: ${error}`);
       $('.showErrors').val('');
     });
   });
