@@ -33,7 +33,7 @@ _This application converts currencies all around the globe. The USer can select 
 
 ## Known Bugs/Future Changes :bug:
 
-* _Currently the app will provide the correct output. However, it doesnt replace existing output in the instance of multiple conversions._
+* _Future Changes: A Conversion section that allows you to see how much the currency would be worth on a given date._
 
 
 ## License :clipboard:
