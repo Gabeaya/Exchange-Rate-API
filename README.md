@@ -29,7 +29,7 @@ _This application converts currencies all around the globe. The USer can select 
 * _Open in Vs code: code ._
 * _Run: npm install. This  gets packages and node modules showing_
 * _Run: npm build_
-* _Go to https://www.exchangerate.com _
+* _Go to https://www.exchangerate.com_
 * _Enter your email and get your free key_
 * _Copy and paste your key and set it equal a variable like so: API_KEY={your-api-key}_
 * _If you would like to see the app in a live server, run: npm start._
